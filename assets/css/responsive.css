@@ -72,6 +72,19 @@
   .feature-item h5 {
     font-size: 22px;
   }
+  #episode-section {
+    padding: 40px 0;
+  }
+  .episode-area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+  .card-content h5 {
+    font-size: 20px;
+  }
+  .video iframe {
+    height: 225px;
+  }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   /* Medium devices */
@@ -105,6 +118,9 @@
   }
   .feature-item:nth-child(5) {
     grid-column: span 1;
+  }
+  .episode-area {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {

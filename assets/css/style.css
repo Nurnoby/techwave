@@ -380,65 +380,39 @@ header {
   font-size: var(--p-16);
   color: var(--body-color);
 }
-
-.episode-card {
-  background: #2a0d5a;
-  border-radius: 20px;
-  overflow: hidden;
-  max-width: 360px;
+/* ======================================
+             EPISODE SECTION
+=======================================*/
+#episode-section {
+  padding: 120px 0;
 }
-
-/* --- video toggle --- */
-.video-toggle summary {
-  list-style: none;
-  cursor: pointer;
+.episode-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
-
-.video-toggle summary::-webkit-details-marker {
-  display: none;
+.card {
+  background-color: #250d44;
+  border-radius: 24px;
 }
-
-.video-thumb {
-  position: relative;
-  aspect-ratio: 16 / 9;
+.video iframe {
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
 }
-
-.video-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card-content {
+  padding: 24px;
 }
-
-.play-btn {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f7e93f, #fb09b4, #9100f8);
+.card-content h5 {
+  font-size: var(--h5);
+  color: var(--white-color);
 }
-
-.play-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border-left: 14px solid white;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+.card-content p {
+  font-size: var(--p-16);
+  color: var(--body-color);
+  padding: 12px 0;
 }
-
-/* --- iframe --- */
-.video-toggle iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
-}
-
-/* Hide iframe until opened */
-.video-toggle:not([open]) iframe {
-  display: none;
+.card-content span {
+  font-size: var(--p-16);
+  color: var(--secondary-color);
 }
