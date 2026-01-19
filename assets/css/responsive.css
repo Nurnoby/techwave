@@ -1,0 +1,36 @@
+/* header  */
+@media (max-width: 575.98px) {
+  /* Small devices */
+
+  nav,
+  .heading-cta {
+    display: none;
+  }
+  .humbarger {
+    display: inline-block;
+  }
+  .logo img {
+    max-width: 140px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Medium devices */
+  nav,
+  .heading-cta {
+    display: none;
+  }
+  .humbarger {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--white-color);
+  }
+  .logo img {
+    max-width: 140px;
+  }
+}
+@media (min-width: 992px) {
+  /* Large devices */
+  .humbarger {
+    display: none;
+  }
+}
