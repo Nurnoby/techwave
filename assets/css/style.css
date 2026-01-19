@@ -65,7 +65,7 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -105,24 +105,14 @@ h6 {
 /* ======================================
                SECTION TITLE
 =======================================*/
-.section-title > .sub-heading {
-  color: var(--primary-color);
-  font-size: var(--p-16);
-  font-weight: 500;
-  text-transform: uppercase;
-}
+
 .section-title > h2 {
-  color: var(--secondary-color);
+  color: var(--white-color);
   font-size: var(--h2);
   text-transform: capitalize;
-  padding: 16px 0;
+  text-align: center;
 }
-.section-title > p {
-  color: var(--body-color);
-  font-size: var(--p-16);
-  font-weight: 400;
-  line-height: 26px;
-}
+
 /* ======================================
                BUTTONS
 =======================================*/
@@ -271,6 +261,10 @@ header {
   /* margin-top: 100px; */
   position: relative;
 }
+.hero-icon img {
+  height: 200px;
+  width: 200px;
+}
 .hero-icon span {
   font-size: 18px;
   font-weight: 600;
@@ -304,44 +298,83 @@ header {
 }
 
 /* ======================================
-               FEATURES
+               ABOUT SECTION
 =======================================*/
-#feature-section {
-  padding: 70px 0;
+#about-section {
+  padding: 50px 0 120px 0;
+}
+.about-area p {
+  color: var(--white-color);
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 16px;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--white-color);
+  opacity: 0.1;
+  margin: 80px 0;
+}
+.fun-fact-area {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 80px;
+  row-gap: 80px;
+  /* justify-content: center; */
+}
+.fact-item {
+  justify-self: center;
+}
+.fact-item h2 {
+  font-size: var(--h2);
+  font-weight: 900;
+  padding-bottom: 16px;
+  color: var(--secondary-color);
   text-align: center;
 }
-.feature-list {
-  margin-top: 44px;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+.fact-item p {
+  font-size: var(--p-16);
+  text-align: center;
+  color: var(--white-color);
+  opacity: 0.8;
 }
-.feature-item {
-  padding: 24px;
-  border-radius: 8px;
-  background-color: var(--white-color);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
-  width: 25%;
+/* ======================================
+             WHY US SECTION
+=======================================*/
+#why-us-section {
+  padding: 120px 0;
+  background-color: #230e3d;
+}
+.feature-area {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.feature-item:nth-child(1) {
+  grid-row: span 2;
+}
+.feature-item:nth-child(2),
+.feature-item:nth-child(3) {
+  grid-column: span 2;
+}
+.feature-item:nth-child(4) {
+  grid-column: span 2;
 }
 
-.feature-item span {
-  background-color: #f95555;
+.feature-item {
+  padding: 40px;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+}
+.feature-item img {
   height: 60px;
   width: 60px;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-.feature-item span img {
-  text-align: center;
 }
 .feature-item h5 {
   font-size: var(--h5);
-  color: var(--secondary-color);
-  line-height: 34px;
   padding: 16px 0;
-  text-transform: capitalize;
 }
 .feature-item p {
   font-size: var(--p-16);
@@ -349,44 +382,11 @@ header {
 }
 
 /* ======================================
-               FOCUS
-=======================================*/
-#focus-section {
-  padding: 80px 0;
-}
-
-#focus-section > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-#focus-section > .container .thumbnail {
-  width: 45%;
-}
-#focus-section > .container .content {
-  width: 55%;
-}
-
-.solution-list {
-  margin-top: 40px;
-}
-.solution-list ul li {
-  list-style: none;
-  font-size: var(--p-16);
-  line-height: 26px;
-  color: var(--body-color);
-  padding-bottom: 16px;
-}
-.solution-list ul li span {
-  color: var(--primary-color);
-}
-
-/* ======================================
                CTA
 =======================================*/
 #cta-section {
   padding: 80px 0;
+  background-color: #230e3d;
 }
 .cta-content {
   padding: 80px 40px;
